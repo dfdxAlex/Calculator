@@ -9,7 +9,12 @@ class TokenArray
 
     public function __construct($str)
     {
+        //Tokenization
+        //токенизация
         $tokenArray = Tokenizator::returnArrayToken($str);
+        
+        // addition operation
+        //операция сложения
         $this->rez = ReturnSum::returnSum($tokenArray);
     }
 
