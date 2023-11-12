@@ -12,7 +12,9 @@ class TokenArray
         //Tokenization
         //токенизация
         $tokenArray = Tokenizator::returnArrayToken($str);
-        
+
+        $tokenArray = MultiplyToSumReplacer::MultiplyToSumReplacer($tokenArray);
+
         // addition operation
         //операция сложения
         $this->rez = ReturnSum::returnSum($tokenArray);
