@@ -1,0 +1,7 @@
+version: '3'
+
+services:
+  calculator:
+    image: alexmway78224/calculator
+    ports:
+      - "90:90"
